@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 
 app.use(require('method-override')('_method'));
+
+app.use(require('body-parser').urlencoded());
 app.use(require('body-parser').json());
 
 const db = require('./db');

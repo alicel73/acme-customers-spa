@@ -2,6 +2,7 @@ const ul = document.getElementById('customerList');
 
 const url = '/api/customers';
    
+const deleteEmail = 
 
 fetch (url)
     .then (result => result.json())
